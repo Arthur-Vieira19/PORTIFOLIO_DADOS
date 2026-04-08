@@ -1,57 +1,70 @@
-# 👥 People Analytics - Dashboard de RH
+# 👥 People Analytics — Dashboard de RH
 
-Dashboard interativo desenvolvido no Power BI para análise de dados de Recursos Humanos, com foco no monitoramento de indicadores estratégicos de pessoas.
-
----
-
-## 📊 Visão Geral
-
-Este projeto tem como objetivo centralizar e visualizar os principais indicadores de RH de uma organização, facilitando a tomada de decisão baseada em dados.
+Dashboard interativo em Power BI para monitoramento de 
+indicadores estratégicos de Recursos Humanos, com foco 
+em turnover, satisfação e distribuição de equipe.
 
 ---
 
-## 📌 Indicadores do Dashboard
+## 🎯 Problema
+
+Gestores de RH frequentemente tomam decisões sobre 
+pessoas sem visibilidade consolidada dos dados da equipe.
+Este projeto centraliza os principais indicadores em um 
+único painel interativo, permitindo análise rápida e 
+tomada de decisão orientada por dados.
+
+---
+
+## 📊 Indicadores Monitorados
 
 | Indicador | Descrição |
 |---|---|
-| 👤 Total de Funcionários | Quantidade total de colaboradores ativos |
-| 📉 Ex-Funcionários (%) | Percentual de turnover da empresa |
-| 💰 Salário Médio | Média salarial dos colaboradores |
-| 🕐 Experiência Média | Tempo médio de experiência da equipe |
-| 🚻 Distribuição por Gênero | Proporção entre colaboradores femininos e masculinos |
-| 💼 Distribuição por Cargo | Total de funcionários por cargo (gráfico de barras) |
-| 😊 Satisfação no Trabalho | Nível de satisfação dos colaboradores (gráfico de rosca) |
-| ⏰ Hora Extra | Proporção de funcionários que fazem hora extra (gráfico de pizza) |
-| 🎂 Faixa Etária | Distribuição dos colaboradores por faixa etária (treemap) |
+| Total de Funcionários | Colaboradores ativos |
+| Turnover (%) | Percentual de ex-funcionários |
+| Salário Médio | Média salarial por cargo/área |
+| Experiência Média | Tempo médio de casa |
+| Distribuição por Gênero | Proporção F/M |
+| Satisfação no Trabalho | Índice por departamento |
+| Hora Extra | % da equipe com horas extras |
+| Faixa Etária | Distribuição por treemap |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🔍 Principais Insights
 
-- **Power BI Desktop**
-- **DAX** (Data Analysis Expressions)
-- **Modelagem de dados relacional**
+- Departamentos com maior índice de hora extra 
+  apresentam menor satisfação no trabalho
+- Faixa etária predominante entre 30–40 anos, 
+  com gap de retenção em colaboradores abaixo de 25
+- Turnover concentrado em cargos operacionais
 
----
-
-## 📁 Estrutura do Projeto
-
-```
-ProjetoPeopleRH/
-├── ProjetoPeopleRH.pbix   # Arquivo principal do relatório Power BI
-└── README.md              # Documentação do projeto
-```
+*(adapta com os insights reais do seu dataset)*
 
 ---
 
-## 🚀 Como Utilizar
+## 🛠️ Tecnologias e Técnicas
 
-1. Faça o download do arquivo `ProjetoPeopleRH.pbix`
-2. Abra o [Power BI Desktop](https://powerbi.microsoft.com/pt-br/desktop/) *(gratuito)*
-3. Abra o arquivo pelo menu **Arquivo > Abrir**
-4. Explore os visuais e interaja com os filtros do dashboard
+- **Power BI Desktop** — modelagem e visualização
+- **DAX** — medidas calculadas:
+  - `Turnover % = DIVIDE([Ex-Funcionários],[Total Funcionários])`
+  - `Satisfação Média = AVERAGEX(Funcionários,[Satisfação])`
+- **Modelagem relacional** — relacionamento entre 
+  tabelas de funcionários, cargos e departamentos
 
 ---
+
+
+## 📁 Dataset
+
+- Fonte: Dataset público de RH *(IBM HR Analytics)*
+- Linhas: X registros | Colunas: Y variáveis
+
+---
+
+## 👨‍💻 Autor
+
+**Arthur Vieira** · [LinkedIn](https://linkedin.com/in/arthur-vieira-machado-dos-santos) · [GitHub](https://github.com/Arthur-Vieira19)
 
 ## 📷 Preview
 
