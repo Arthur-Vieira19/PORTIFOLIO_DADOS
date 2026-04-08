@@ -39,7 +39,7 @@ tomada de decisão orientada por dados.
   com gap de retenção em colaboradores abaixo de 25
 - Turnover concentrado em cargos operacionais
 
-*(adapta com os insights reais do seu dataset)*
+
 
 ---
 
