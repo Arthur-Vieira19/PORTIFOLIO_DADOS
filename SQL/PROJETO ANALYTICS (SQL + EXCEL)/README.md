@@ -60,7 +60,7 @@ SQL (PostgreSQL) → Resultados exportados → Dashboard Excel
 
 ## 📁 Estrutura
 
-projeto-vendas/
+PROJETO ANALYTICS(SQL + EXCEL)/
 ├── DashBoard_acompanhamento_de_vendas.sql
 ├── Dashboard_de_vendas.xlsx
 └── README.md
